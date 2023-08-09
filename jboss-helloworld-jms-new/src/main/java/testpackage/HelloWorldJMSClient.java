@@ -70,7 +70,7 @@ public class HelloWorldJMSClient {
             int count = Integer.parseInt(System.getProperty("message.count", DEFAULT_MESSAGE_COUNT));
             String content = System.getProperty("message.content", DEFAULT_MESSAGE);
 
-            /*
+            
             //Creating a Producer
             try (JMSContext context = connectionFactory.createContext(userName, password)) {
                 log.info("Sending " + count + " messages with content: " + content);
@@ -79,7 +79,7 @@ public class HelloWorldJMSClient {
                     context.createProducer().send(destination, content);
                 }            
             }
-            */
+            
 
            
                 // Create the JMS consumer
