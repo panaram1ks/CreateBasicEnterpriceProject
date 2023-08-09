@@ -1,0 +1,14 @@
+useful commands to Jboss Server
+
+./jboss-cli.sh
+
+connect
+
+deploy "/home/parom/EclipseProject/build/TestDate.ear"
+
+undeploy TestDate.ear
+
+deploy "/home/parom/EclipseProject/postgresqlDriver/postgresql-42.6.0.jar"
+
+
+jms-queue add --queue-address=TestJMS1 --entries=queue/Test1,java:jboss/exported/jms/queue/Test1
